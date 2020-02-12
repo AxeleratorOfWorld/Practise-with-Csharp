@@ -1,0 +1,50 @@
+using System;
+
+namespace ConsoleApp1
+{
+        class Program
+        {
+            static void Main(string[] args)
+            {
+
+            
+            Console.WriteLine("Введите первое число");
+            double x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите второе число");
+            double y = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Выберите операцию \n" +
+                "1. Сложение \n" +
+                "2. Вычитание \n" +
+                "3. Умножение \n" +
+                "4. Деление \n" +
+                "5. Деление с остатоком\n");
+
+            int z = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\n");
+            Console.WriteLine("Результат:");
+            switch (z)
+            {
+                default:
+                    Console.WriteLine("Неизвестная операция");
+                    break;
+                case 1:
+                    Console.WriteLine(x + y);
+                    break;
+                case 2:
+                    Console.WriteLine(x - y);
+                    break;
+                case 3:
+                    Console.WriteLine(x * y);
+                    break;
+                case 4:
+                    Console.WriteLine(x / y);
+                    break;
+                case 5:
+                    Console.WriteLine(x % y);
+                    break;
+
+
+            }
+          
+        }
+        }
