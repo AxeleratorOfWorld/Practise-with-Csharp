@@ -1,0 +1,38 @@
+using System;
+
+
+namespace ConsoleApp1
+{
+        class Program
+        {
+            static void Main(string[] args)
+            {
+            Console.Write("Введите количество элементов массива:\t");
+            int ElementCount = Convert.ToInt32(Console.ReadLine());
+
+            float[] Array = new float[ElementCount];
+
+            for (int i = 0; i < Array.Length; i++)
+            {
+                Console.WriteLine($"Введите элемент массива под номер {i}");
+                Array[i] = Convert.ToSingle(Console.ReadLine());
+
+            }
+
+            Console.WriteLine("Вывод массива:");
+          
+            
+            for (int i = 0; i < Array.Length; i++)
+                {
+                Console.WriteLine($"{i} Элемент массива {Array[i]}");
+                }
+                
+            
+
+            }
+        }
+      
+
+   
+    
+}
